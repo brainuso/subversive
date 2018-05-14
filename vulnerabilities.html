@@ -101,13 +101,13 @@ The Eastland Mall is a urban hub of activity on bank holidays. Shopping, leisure
        <!-- storyline section begin -->
        <section id="vulnerable-body">
         <div class="container-fluid col-md-8 p-3">
-           <div class="card px-0">
+           <div class="card">
                 <div class="card-body">
                     <div class="row">
-                        <div class=" col-3 py-0">
-                          <span id="lighting-icon" class="fas fa-lightbulb fa-6x"></span>
+                        <div class=" col-5 text-center py-0">
+                          <span id="lighting-icon" class="fas fa-lightbulb fa-4x"></span>
                         </div>
-                          <div class=" col-8 card-text">
+                          <div class=" col-7 card-text">
                             <h3 class="display-5">Lighting</h3>
            <p class="btn-attack display-5">OFF/ON</p>
 <!-- Rounded switch -->
@@ -123,13 +123,13 @@ The Eastland Mall is a urban hub of activity on bank holidays. Shopping, leisure
                 </div>
             </div>
 <hr class="my-2">
-            <div class="card col-md-6 px-0">
+            <div class="card">
                 <div class="card-body">
                     <div class="row">
-                        <div class=" col-3 py-0">
-                          <span id="elevator-icon" class="fa fa-sort fa-3x" data-fa-transform="rotate-180" ></span>
+                        <div class=" col-5 text-center py-0">
+                          <span id="elevator-icon" class="fa fa-sort fa-4x" data-fa-transform="rotate-180" ></span>
                         </div>
-                          <div class="col-8 card-text">
+                          <div class="col-7 card-text">
                             <h3 class="display-5">Elevator</h3>
            <p class="btn-attack display-5">OFF/ON</p>
 <!-- Rounded switch -->
@@ -145,10 +145,10 @@ The Eastland Mall is a urban hub of activity on bank holidays. Shopping, leisure
             <div class="card">
                 <div class="card-body">
                     <div class="row">
-                         <div class=" col-3 py-0">
-                          <span id="door-icon" class="fas fa-door-open fa-3x"></span>
+                         <div class=" col-5 text-center py-0">
+                          <span id="door-icon" class="fas fa-door-open fa-4x"></span>
                         </div>
-                          <div class="col-8 card-text">
+                          <div class="col-7 card-text">
                             <h3 class="display-5">Doors</h3>
            <p class="btn-attack display-5">OPEN/CLOSED</p>
 <!-- Rounded switch -->
@@ -165,10 +165,10 @@ The Eastland Mall is a urban hub of activity on bank holidays. Shopping, leisure
             <div class="card">
                 <div class="card-body">
                     <div class="row">
-                         <div class="col-3 py-0">
-                          <span id="alarm-icon" class="fas fa-bell-slash fa-3x" ></span>
+                         <div class="col-5 text-center py-0">
+                          <span id="alarm-icon" class="fas fa-bell-slash fa-4x" ></span>
                         </div>
-                          <div class="col-8 card-text">
+                          <div class="col-7 card-text">
                             <h3 class="display-5">Fire Alarms</h3>
            <p class="btn-attack display-5">OFF/ON</p>
 <!-- Rounded switch -->
@@ -184,13 +184,13 @@ The Eastland Mall is a urban hub of activity on bank holidays. Shopping, leisure
 <div class="card">
                 <div class="card-body">
                     <div class="row">
-                         <div class="col-3 py-0">
-                          <span class="fas fa-video fa-3x"></span>
+                         <div class="col-5 text-center py-0">
+                          <span class="fas fa-video fa-4x"></span>
                         </div>
-                          <div class="col-8 card-text">
-                            <h3 class="display-5">CCTV</h3>
+                          <div class="col-7 card-text">
+                            <h3 class="display-5">CCTV Video</h3>
   
-    <button type="button" class="btn btn-primary btn-round" data-toggle="modal" data-target="#cameraModal"> <span class="fa fa-video"></span> Camera feed</button>
+    <button type="button" class="btn btn-primary btn-round" data-toggle="modal" data-target="#cameraModal"> <span class="fa fa-video"></span> Looped Video</button>
         
                         </div>
                     </div>
@@ -201,10 +201,10 @@ The Eastland Mall is a urban hub of activity on bank holidays. Shopping, leisure
         <div class="card">
                 <div class="card-body">
                     <div class="row">
-                         <div class=" col-3 py-0">
-                          <span class="fas fa-camera fa-3x"></span>
+                         <div class=" col-5 text-center py-0">
+                          <span class="fas fa-camera fa-4x"></span>
                         </div>
-                          <div class="col-8 card-text">
+                          <div class="col-7 card-text">
                             <h3 class="display-5">CCTV Camera</h3>
   
     <button type="button" class="btn btn-primary btn-round" data-toggle="modal" data-target="#cameraModal"> <span class="fa fa-camera"></span> Camera feed</button>
@@ -217,10 +217,10 @@ The Eastland Mall is a urban hub of activity on bank holidays. Shopping, leisure
             <div class="card">
                 <div class="card-body">
                     <div class="row">
-                         <div class="col-3 py-0">
-                          <span id="signal-icon" class="fas fa-signal fa-3x"></span>
+                         <div class="col-5 text-center py-0">
+                          <span id="signal-icon" class="fas fa-signal fa-4x"></span>
                         </div>
-                          <div class="col-8 card-text">
+                          <div class="col-7 card-text">
                             <h3 class="display-5">Signal jammer</h3>
    <p class="btn-attack display-5">OFF/ON</p>
    <!-- Rounded switch -->
@@ -273,10 +273,10 @@ function lighting(){
 
 if($("#lighting").is(":checked"))
 {
-  $("#lighting-icon").attr("class", "far fa-lightbulb fa-6x");
+  $("#lighting-icon").attr("class", "far fa-lightbulb fa-4x");
 }
 else{
-   $("#lighting-icon").attr("class", "fas fa-lightbulb fa-6x");
+   $("#lighting-icon").attr("class", "fas fa-lightbulb fa-4x");
 }
 }
 
@@ -293,30 +293,30 @@ else{
 function doors(){   
 if($("#doors").is(":checked"))
 {
-  $("#door-icon").attr("class", "fas fa-door-closed fa-3x");
+  $("#door-icon").attr("class", "fas fa-door-closed fa-4x");
 }
 else{
-   $("#door-icon").attr("class", "fas fa-door-open fa-3x");
+   $("#door-icon").attr("class", "fas fa-door-open fa-4x");
 }
 }
 
 function alarms(){   
 if($("#alarms").is(":checked"))
 {
-  $("#alarm-icon").attr("class", "fas fa-bell fa-3x");
+  $("#alarm-icon").attr("class", "fas fa-bell fa-4x");
 }
 else{
-   $("#alarm-icon").attr("class", "fas fa-bell-slash fa-3x");
+   $("#alarm-icon").attr("class", "fas fa-bell-slash fa-4x");
 }
 }
 
 function signal(){   
 if($("#signal").is(":checked"))
 {
-  $("#signal-icon").attr("class", "fas fa-ban fa-3x");
+  $("#signal-icon").attr("class", "fas fa-ban fa-4x");
 }
 else{
-   $("#signal-icon").attr("class", "fas fa-signal fa-3x");
+   $("#signal-icon").attr("class", "fas fa-signal fa-4x");
 }
 }
         </script>
