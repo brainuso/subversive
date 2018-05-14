@@ -11,7 +11,7 @@
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom styles for this template -->
         <link href="assets/css/custom.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -38,6 +38,9 @@
         <a class="nav-link" href="#">Vulnerabilities</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="design.html">Design</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="about.html">About Us</a>
       </li>
     </ul>
@@ -54,15 +57,19 @@
             <div class="container">
               <div class="row col-12 col-md-6 col-xl-6">  
              <h1 class="display-5">Vulnerabilities</h1>
-  <hr class="my-4">
-  <p class="lead blockquote"> Shopping is as everyday as breathing.</p>
-  
+  </div>
+    <div class="row col-12 col-md-10"> <h4 class="lead"><strong>Subversive Bank Holiday mayhem</strong></h4>
+<p>
+The Eastland Mall is a urban hub of activity on bank holidays. Shopping, leisure and cinema are attractions to the locals. <br> Hackers were able to access the following vulnerabilities due to bad security systems.</p>
+    </div>
+   
+
     <p>
-    <a class="btn btn-primary btn-round" href="#vulnerable-body" transition="fade" role="button">Begin demo</a>
+    <a class="btn btn-primary btn-round" href="#vulnerable-body" transition="fade" role="button">Check vulnerabilities</a>
   </p>
   </div>
             </div>
-        </div>
+        
        </section>
        <!--header section  end-->
 <!-- modal section begins -->
@@ -93,46 +100,139 @@
 
        <!-- storyline section begin -->
        <section id="vulnerable-body">
-        <div class="container-fluid col-md-10 p-3">
-           <div class="card">
+        <div class="container-fluid col-md-8 p-3">
+           <div class="card px-0">
                 <div class="card-body">
                     <div class="row">
-                        <div class=" col-md-3 py-0">
-                          <h5 class="">Lighting</h5>
-                          </div>
-                        <!--  <div class="col-md-6 card-text">
-            
-                        </div>-->
-                         <div class="col-md-6"> <p class="btn-attack">Toggle Lighting <br>ON/OFF</p>
+                        <div class=" col-3 py-0">
+                          <span id="lighting-icon" class="fas fa-lightbulb fa-6x"></span>
+                        </div>
+                          <div class=" col-8 card-text">
+                            <h3 class="display-5">Lighting</h3>
+           <p class="btn-attack display-5">OFF/ON</p>
 <!-- Rounded switch -->
 <label class="switch">
-  <input type="checkbox">
+  <input onclick="lighting()" id="lighting" type="checkbox">
   <span class="slider round"></span>
 </label>
+                        </div>
+                        <!--  <div class="col-md-6"> 
 
+                 </div> -->
+                    </div>
+                </div>
+            </div>
+<hr class="my-2">
+            <div class="card col-md-6 px-0">
+                <div class="card-body">
+                    <div class="row">
+                        <div class=" col-3 py-0">
+                          <span id="elevator-icon" class="fa fa-sort fa-3x" data-fa-transform="rotate-180" ></span>
+                        </div>
+                          <div class="col-8 card-text">
+                            <h3 class="display-5">Elevator</h3>
+           <p class="btn-attack display-5">OFF/ON</p>
+<!-- Rounded switch -->
+<label class="switch">
+  <input onclick="elevator()" id="elevator" type="checkbox">
+  <span class="slider round"></span>
+</label>
+                        </div>
+                      </div>
+                </div>
+            </div>
+<hr class="my-2">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                         <div class=" col-3 py-0">
+                          <span id="door-icon" class="fas fa-door-open fa-3x"></span>
+                        </div>
+                          <div class="col-8 card-text">
+                            <h3 class="display-5">Doors</h3>
+           <p class="btn-attack display-5">OPEN/CLOSED</p>
+<!-- Rounded switch -->
+<label class="switch">
+  <input onclick="doors()" id="doors" type="checkbox">
+  <span class="slider round"></span>
+</label>
+                        </div>
+                        
                  </div>
                     </div>
                 </div>
-            </div>
-            <hr class="my-2">
-        <div class="card">
+<hr class="my-2">
+            <div class="card">
                 <div class="card-body">
-                    <div class="row flex-wrap">
-                        <div class=" col-md-3 py-0 card-time">
-                          <time class="">
-                            <h4 class="lead display-4">10:15 hrs</h4></time>
+                    <div class="row">
+                         <div class="col-3 py-0">
+                          <span id="alarm-icon" class="fas fa-bell-slash fa-3x" ></span>
                         </div>
-                        <div class="col-md-6 card-text">
-            <p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
-                        </div>
-                        <div class="col-md-3 card-btn">
-                         <p class="btn-attack">Check Camera feed</p>
-                            <button type="button" class="btn btn-primary btn-round" data-toggle="modal" data-target="#cameraModal"> <span class="fa fa-camera"></span> Camera feed<span class="glyphicons glyphicon-bell"></span></button>
+                          <div class="col-8 card-text">
+                            <h3 class="display-5">Fire Alarms</h3>
+           <p class="btn-attack display-5">OFF/ON</p>
+<!-- Rounded switch -->
+<label class="switch">
+  <input onclick="alarms()" id="alarms" type="checkbox">
+  <span class="slider round"></span>
+</label>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+<hr class="my-2">
+<div class="card">
+                <div class="card-body">
+                    <div class="row">
+                         <div class="col-3 py-0">
+                          <span class="fas fa-video fa-3x"></span>
+                        </div>
+                          <div class="col-8 card-text">
+                            <h3 class="display-5">CCTV</h3>
+  
+    <button type="button" class="btn btn-primary btn-round" data-toggle="modal" data-target="#cameraModal"> <span class="fa fa-video"></span> Camera feed</button>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-2">
+        <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                         <div class=" col-3 py-0">
+                          <span class="fas fa-camera fa-3x"></span>
+                        </div>
+                          <div class="col-8 card-text">
+                            <h3 class="display-5">CCTV Camera</h3>
+  
+    <button type="button" class="btn btn-primary btn-round" data-toggle="modal" data-target="#cameraModal"> <span class="fa fa-camera"></span> Camera feed</button>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <hr class="my-2">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                         <div class="col-3 py-0">
+                          <span id="signal-icon" class="fas fa-signal fa-3x"></span>
+                        </div>
+                          <div class="col-8 card-text">
+                            <h3 class="display-5">Signal jammer</h3>
+   <p class="btn-attack display-5">OFF/ON</p>
+   <!-- Rounded switch -->
+<label class="switch">
+  <input onclick="signal()" id="signal" type="checkbox">
+  <span class="slider round"></span>
+</label>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 <!-- storyline section end -->
 
@@ -143,6 +243,7 @@
             <div class="container">
             <div class="row">
                 <a class="text-muted m-2" href="about.html">About</a>
+                <a class="text-muted m-2" href="design.html">Design</a>
                 <a class="text-muted m-2" href="vulnerabilities.html">Vulnerabilities</a>
                 <a class="text-muted m-2" href="storyline.html">Storyline</a>
                 
@@ -161,6 +262,63 @@
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
         <script src="assets/js/smoothscroll.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+  
+/*================
+Click functions for vulnerabilities    
+Each function is called by the checkbox input 
+=================*/ 
+function lighting(){   
+
+if($("#lighting").is(":checked"))
+{
+  $("#lighting-icon").attr("class", "far fa-lightbulb fa-6x");
+}
+else{
+   $("#lighting-icon").attr("class", "fas fa-lightbulb fa-6x");
+}
+}
+
+function elevator(){   
+if($("#elevator").is(":checked"))
+{
+  $("#elevator-icon").attr("style", "color: #2196F3");
+}
+else{
+   $("#elevator-icon").attr("style", "color:");
+}
+}
+
+function doors(){   
+if($("#doors").is(":checked"))
+{
+  $("#door-icon").attr("class", "fas fa-door-closed fa-3x");
+}
+else{
+   $("#door-icon").attr("class", "fas fa-door-open fa-3x");
+}
+}
+
+function alarms(){   
+if($("#alarms").is(":checked"))
+{
+  $("#alarm-icon").attr("class", "fas fa-bell fa-3x");
+}
+else{
+   $("#alarm-icon").attr("class", "fas fa-bell-slash fa-3x");
+}
+}
+
+function signal(){   
+if($("#signal").is(":checked"))
+{
+  $("#signal-icon").attr("class", "fas fa-ban fa-3x");
+}
+else{
+   $("#signal-icon").attr("class", "fas fa-signal fa-3x");
+}
+}
         </script>
     </body>
 </html>

@@ -9,6 +9,7 @@
         <title>Starter Template for Bootstrap</title>
         <!-- Bootstrap core CSS -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- <link href="assets/css/bootstrap-slider.css" rel="stylesheet"> -->
         <!-- Custom styles for this template -->
         <link href="assets/css/custom.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,6 +39,9 @@
         <a class="nav-link" href="vulnerabilities.html">Vulnerabilities</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="design.html">Design</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="about.html">About Us</a>
       </li>
     </ul>
@@ -50,15 +54,21 @@
 <section id="header">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-              <div class="row col-12 col-md-6 col-xl-6">  
+              <div class="row col-md-6 col-xl-6">  
              <h1 class="display-5">Storyline</h1>
-  <hr class="my-4">
-  <p class="lead blockquote"> Shopping is as everyday as breathing.</p>
-  
+    </div>
+    <div class="row col-12 col-md-10"> <h4 class="lead"><strong>Subversive Bank Holiday mayhem</strong></h4>
+<p>
+The Eastland Mall is a urban hub of activity on bank holidays. Shopping, leisure and cinema are attractions to the locals.<br> Days earlier, hackers gained access to the malls server through a phishing email targetted at mall staff. They accessed root administrator and implanted scripts to run their attacks.
+<br><strong>The plan:</strong> Carry out a Bank holiday robbery under the guise of a terror attack.
+<br><strong>The team:</strong> A and B Teams with 3 members each</p>
+    </div>
+   
+
     <p>
-    <a class="btn btn-primary btn-round" href="#storyline-body" transition="fade" role="button">Begin demo</a>
+    <a class="btn btn-primary btn-round" href="#storyline-body" transition="fade" role="button">Begin Storyline</a>
   </p>
-  </div>
+  
             </div>
         </div>
        </section>
@@ -87,21 +97,43 @@
     </div>
   </div>
 </div>
+
+<!-- video
+        Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">CCTV Feed</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <video class="" width="320" height="240" controls>
+         <source src="C:\Users\ADELEYE OMOKHEOA\Videos\motivational\CHANGE EVERYTHING - Motivational Video.mp4" type="video/mp4">
+       </video>
+      </div>
+
+    </div>
+  </div>
+</div>
 </section>
 <!-- modal section ends -->
 
        <!-- storyline section begin -->
        <section id="storyline-body">
         <div class="container-fluid p-3 col-md-11">
+       
            <div class="card">
                 <div class="card-body">
                     <div class="row flex-wrap">
                         <div class=" col-md-3 py-0 card-time">
                           <time class="">
-                            <h4 class="lead display-4">10:00 hrs</h4></time>
+                            <h4 class="lead display-4">10:00 </h4></time>
                         </div>
                         <div class="col-md-6 card-text">
-            <p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
+            <p>A team of 3 hackers walk into the mall as normal shoppers. One of them, Big Carl tried to gain access to the server room but was found by security and placed under arrest in the security office.</p>
                         </div>
             <div class="col-md-3 card-btn"> <p class="btn-attack">Turn on Alarm</p>
 <!-- Rounded switch -->
@@ -121,15 +153,41 @@
                     <div class="row flex-wrap">
                         <div class=" col-md-3 py-0 card-time">
                           <time class="">
-                            <h4 class="lead display-4">10:15 hrs</h4></time>
+                            <h4 class="lead display-4">10:05 </h4></time>
                         </div>
                         <div class="col-md-6 card-text">
-            <p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
+            <p>Using the root admin access, the B team took over WiFi and server controls. From WiFi access, they downloaded shoppers credentials and knock down the ATM network.</p>
                         </div>
                         <div class="col-md-3 card-btn">
-                         <p class="btn-attack">Check Camera feed</p>
-                            <button type="button" class="btn btn-primary btn-round" data-toggle="modal" data-target="#cameraModal"> <span class="fa fa-camera"></span> Camera feed<span class="glyphicons glyphicon-bell"></span></button>
+                         <p class="btn-attack">Take over WiFi</p>
+ <!-- Rounded switch -->
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
                         </div>
+                    </div>
+                </div>
+            </div>
+<hr class="my-2">
+ <div class="card">
+                <div class="card-body">
+                    <div class="row flex-wrap">
+                        <div class=" col-md-3 py-0 card-time">
+                          <time class="">
+                            <h4 class="lead display-4">10:07 </h4></time>
+                        </div>
+                        <div class="col-md-6 card-text">
+            <p>An internal call requested for security to check the elevator. While checking the elevator, the elevator locked and traps the security personnel between floors. Hackers jam the  walkie-talkie signals.</p>
+                        </div>
+                        <div class="col-md-3 card-btn">
+                         <p class="btn-attack">Control elevator and play static over speaker</p>
+                          <!-- Rounded switch -->
+<label class="switch">
+  <input id="elevator" type="checkbox">
+  <span class="slider round"></span>
+</label>
+                         </div>
                     </div>
                 </div>
             </div>
@@ -141,14 +199,131 @@
                     <div class="row flex-wrap">
                         <div class=" col-md-3 py-0 card-time">
                           <time class="">
-                            <h4 class="lead display-4">10:45 hrs</h4></time>
+                            <h4 class="lead display-4">10:09 </h4></time>
                         </div>
                         <div class="col-md-6 card-text">
-            <p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
+            <p>A looped video was played over the CCTV feed to confuse the rest of the guards.</p>
                         </div>
                 <div class="col-md-3 card-btn">
-                <p class="btn-attack">Check Camera feed</p>
-                <button type="button" class="btn btn-primary btn-round" data-toggle="modal" data-target="#cameraModal"> <span class="fa fa-camera"></span> Camera feed<span class="glyphicons glyphicon-bell"></span>
+                
+                <button type="button" class="btn btn-primary btn-round" data-toggle="modal" data-target="#videoModal"> <span class="fa fa-play"></span> Play video feed<span class="glyphicons glyphicon-bell"></span>
+                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+<hr class="my-2">
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="row flex-wrap">
+                        <div class=" col-md-3 py-0 card-time">
+                          <time class="">
+                            <h4 class="lead display-4">10:11 </h4></time>
+                        </div>
+                        <div class="col-md-6 card-text">
+            <p>All mall wifi redirected shoppers to fake news site on intended terrorist attack on the mall spreading panic among shoppers. The B team unlocked the security office and let Big Carl out.</p>
+                        </div>
+                <div class="col-md-3 card-btn">
+                
+                <button type="button" class="btn btn-primary btn-round" data-toggle="modal" data-target="#cameraModal"> <span class="fa fa-newspaper"></span>View News site 
+                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+
+<hr class="my-2">
+        
+            <div class="card">
+                <div class="card-body">
+                    <div class="row flex-wrap">
+                        <div class=" col-md-3 py-0 card-time">
+                          <time class="">
+                            <h4 class="lead display-4">10:13 </h4></time>
+                        </div>
+                        <div class="col-md-6 card-text">
+            <p>The B team cut out the lights and triggered the fire alarms.</p>
+                        </div>
+                <div class="col-md-3 card-btn">
+                <p class="btn-attack">Turn of the lights and turn on the fire alarms</p>
+                                         <!-- Rounded switch -->
+<label class="switch">
+  <input id="lights-alarm" type="checkbox">
+  <span class="slider round"></span>
+</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        <hr class="my-2">
+        
+            <div class="card">
+                <div class="card-body">
+                    <div class="row flex-wrap">
+                        <div class=" col-md-3 py-0 card-time">
+                          <time class="">
+                            <h4 class="lead display-4">10:15 </h4></time>
+                        </div>
+                        <div class="col-md-6 card-text">
+            <p>As shoppers tried to get out the fire exit doors didn't open as they were remotely shut. The A team released the smoke from the vents creating chaos around the shopping mall.</p>
+                        </div>
+                <div class="col-md-3 card-btn">
+                <p class="btn-attack">Shut doors and release smoke</p>
+               <label class="switch">
+  <input id="doors-smoke" type="checkbox">
+  <span class="slider round"></span>
+</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        <hr class="my-2">
+        
+            <div class="card">
+                <div class="card-body">
+                    <div class="row flex-wrap">
+                        <div class=" col-md-3 py-0 card-time">
+                          <time class="">
+                            <h4 class="lead display-4">10:14 </h4></time>
+                        </div>
+                        <div class="col-md-6 card-text">
+            <p>All outgoing call from shoppers to emergency response teams were block by the A team using cellphone jammers. In the ensuing chaos, the B team completes the ATM attack, shut down CCTV and places jackpot code for A team to pick up cash.  They also rob a few jewelry stores.</p>
+                        </div>
+                <div class="col-md-3 card-btn">
+                <p class="btn-attack">Cellphone jammer</p>
+                 <label class="switch">
+  <input id="doors-smoke" type="checkbox">
+  <span class="slider round"></span>
+</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <hr class="my-2">
+        
+            <div class="card">
+                <div class="card-body">
+                    <div class="row flex-wrap">
+                        <div class=" col-md-3 py-0 card-time">
+                          <time class="">
+                            <h4 class="lead display-4">10:16 </h4></time>
+                        </div>
+                        <div class="col-md-6 card-text">
+            <p>With the job done. The A team opened the fire exit doors, and as shoppers stampede out of the mall, they wipe the hard drives while Big Carl and the A team set fire to the barbecue shop under the server room and went out through the service entrance.</p>
+                        </div>
+                <div class="col-md-3 card-btn">
+                <p class="btn-attack"></p>
+                <button type="button" class="btn btn-primary btn-round"> <span class="fa fa-camera"></span> Fireworks
                 </button>
                         </div>
                     </div>
@@ -164,6 +339,7 @@
             <div class="container">
             <div class="row">
                 <a class="text-muted m-2" href="about.html">About</a>
+                <a class="text-muted m-2" href="design.html">Design</a>
                 <a class="text-muted m-2" href="vulnerabilities.html">Vulnerabilities</a>
                 <a class="text-muted m-2" href="storyline.html">Storyline</a>
                 
@@ -182,5 +358,10 @@
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
         <script src="assets/js/smoothscroll.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+          //Slider function
+
+        </script>
     </body>
 </html>
